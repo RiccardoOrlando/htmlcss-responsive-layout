@@ -202,6 +202,11 @@ main {
     padding: 15px;
 }
 
+.social button{
+    border: none;
+    cursor: pointer;
+}
+
 .presentation{
     padding-top: 50px;
 }
@@ -243,6 +248,61 @@ main {
         flex-wrap: wrap;
         gap: 50px;
     }
+    .row .flex-container{
+        line-height: 15px;
+    }
+    #banner{
+        display: block;
+    }
+    .social .facebook{
+        text-align: center;
+        border-radius: 50px;
+        padding: 0 50px;
+        max-width: 150px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .social .twitter{
+        text-align: center;
+        border-radius: 50px;
+        padding: 0 50px;
+        max-width: 150px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .social .instagram{
+        text-align: center;
+        border-radius: 50px;
+        padding: 0 50px;
+        max-width: 150px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .social .pinterest, .social .youtube{
+        text-align: center;
+        border-radius: 50px;
+        padding: 0 50px;
+        max-width: 150px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+/* Desktop da 992px a infinito */
+@media screen and (min-width: 992px) {
+    .recipe-intro .col-video {
+        width: 70%;
+    }
+    .recipe-intro .col-details {
+        width: 30%;
+    }
+    .social span{
+        display: inline;
+        font-size: 16px;
+    }
     .social .facebook{
         color: blue;
         max-width: 160px;
@@ -269,26 +329,6 @@ main {
         max-width: 160px;
         text-align: center;
         border-radius: 50px;
-    }
-    .row .flex-container{
-        line-height: 15px;
-    }
-    #banner{
-        display: block;
-    }
-}
-
-/* Desktop da 992px a infinito */
-@media screen and (min-width: 992px) {
-    .recipe-intro .col-video {
-        width: 70%;
-    }
-    .recipe-intro .col-details {
-        width: 30%;
-    }
-    .social span{
-        display: inline;
-        font-size: 16px;
     }
 }
 
