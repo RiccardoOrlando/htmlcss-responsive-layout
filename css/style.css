@@ -209,10 +209,15 @@ main {
 
 #banner{
     padding-top: 40px;
+    display: none;
 }
 
 .social span{
     display: none;
+}
+
+.presentation p{
+    line-height: 30px;
 }
 
 /*----------------
@@ -265,7 +270,12 @@ main {
         text-align: center;
         border-radius: 50px;
     }
-
+    .row .flex-container{
+        line-height: 15px;
+    }
+    #banner{
+        display: block;
+    }
 }
 
 /* Desktop da 992px a infinito */
