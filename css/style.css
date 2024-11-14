@@ -1,0 +1,284 @@
+/*----------------
+    DEBUG
+------------------*/
+.debug .container {
+    border: 2px dashed blueviolet;
+}
+
+.debug .row .col {
+    border: 2px dashed lightcoral;
+    background-color: rgba(240, 128, 128, 0.2);
+    min-height: 200px;
+}
+
+/*----------------
+    RESET
+------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------
+    COMMONS
+------------------*/
+.img-fluid {
+    max-width: 100%;
+}
+
+/*----------------
+    LAYOUT
+------------------*/
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+.gap-20 {
+    gap: 20px;
+}
+.gap-30 {
+    gap: 30px;
+}
+
+.col {
+    flex-grow: 1;
+}
+
+.hr-short{
+    width: 20%;
+    margin-bottom: 20px;
+    border: 1px solid orange;
+}
+
+/*----------------
+    TYPOGRAPHY
+------------------*/
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f6f5f3;
+}
+
+h1 {
+    font-family: "Nerko One", cursive;
+    font-size: 46px;
+    text-shadow: 1px 1px 2px #333;
+}
+
+h2 {
+    color: #4e3969;
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: gray;
+}
+
+
+/*----------------
+    SOCIAL
+------------------*/
+
+.facebook{
+    color: blue;
+}
+
+.twitter{
+    color: #009eff;
+}
+
+.instagram{
+    color: #e15b8d;
+}
+
+.pinterest, .youtube{
+    color: #e62222;
+}
+
+
+
+/*----------------
+    BUTTONS
+------------------*/
+.btn {
+    background-color: transparent;
+    font-family: inherit;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.btn-large {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: lightcoral;
+    color: #fff;
+}
+
+/*----------------
+    HEADER
+------------------*/
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 14px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: #ff9614;
+}
+
+/*----------------
+    MAIN
+------------------*/
+main {
+    padding: 26px;
+}
+
+.recipe-intro h2 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.recipe-intro h2 > span {
+    display: none;
+}
+
+.recipe-intro .col-video,
+.recipe-intro .col-details {
+    width: 100%;
+}
+
+.recipe-intro .col-video img {
+    width: 100%;
+}
+
+.img-tiramisu {
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+
+.col-details h4{
+    margin-bottom: 20px;
+}
+
+.flex-container{
+    line-height: 30px;
+}
+
+.col-background{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.social{
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.social i{
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.presentation{
+    padding-top: 50px;
+}
+
+
+#banner{
+    padding-top: 40px;
+}
+
+.social span{
+    display: none;
+}
+
+/*----------------
+    FOOTER
+------------------*/
+
+/*----------------
+    RESPONSIVE
+------------------*/
+/* Tablet da 768px a infinito */
+@media screen and (min-width: 768px) {
+    header {
+        text-align: left;
+    }
+    .recipe-intro h2 > span {
+        display: inline;
+    }
+    .img-tiramisu {
+        float: left
+    }
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .social .facebook{
+        color: blue;
+        max-width: 160px;
+        text-align: center;
+        border-radius: 50px;
+    }
+    
+    .social .twitter{
+        color: #009eff;
+        max-width: 150px;
+        text-align: center;
+        border-radius: 50px;
+    }
+    
+    .social .instagram{
+        color: #e15b8d;
+        max-width: 160px;
+        text-align: center;
+        border-radius: 50px;
+    }
+    
+    .social .pinterest, .social .youtube{
+        color: #e62222;
+        max-width: 160px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+}
+
+/* Desktop da 992px a infinito */
+@media screen and (min-width: 992px) {
+    .recipe-intro .col-video {
+        width: 70%;
+    }
+    .recipe-intro .col-details {
+        width: 30%;
+    }
+    .social span{
+        display: inline;
+        font-size: 16px;
+    }
+}
+
